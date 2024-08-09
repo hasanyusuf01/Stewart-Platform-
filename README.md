@@ -1,12 +1,6 @@
 # Stewart-Platform-
 This repository contains code for training custom multi modal neural networks designed to predict the 6 Degrees of Freedom (6DoF) for parallel robot.
-Here is a README for your GitHub repository's `scripts` folder based on the contents of the uploaded files:
 
----
-Here is a README for the custom deep learning models you have in the `models` folder, focusing on predicting the 6 Degrees of Freedom (6DoF) for a robot with different backbone architectures.
-
----
-Here is a README for the dataset collection and preprocessing scripts in your project:
 
 ---
 
