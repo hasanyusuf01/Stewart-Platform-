@@ -1,21 +1,50 @@
-# Stewart-Platform-
-This repository contains code for training custom multi modal neural networks designed to predict the 6 Degrees of Freedom (6DoF) for parallel robot.
+Here's a revised version of your README with a consolidated table of contents pointing to the main sections:
 
+---
+
+# Stewart-Platform
+
+This repository contains code for training custom multimodal neural networks designed to predict the 6 Degrees of Freedom (6DoF) for a parallel robot.
+
+## Table of Contents
+
+1. [Dataset Collection and Preprocessing Scripts](#dataset-collection-and-preprocessing-scripts)
+   - [rotate.py](#rotatepy)
+   - [data_collection.py](#data_collectionpy)
+   - [cropping.py](#croppingpy)
+   - [copy6.py](#copy6py)
+   - [Requirements](#requirements)
+   - [Usage](#usage)
+
+2. [Custom Deep Learning Models for 6DoF Prediction](#custom-deep-learning-models-for-6dof-prediction)
+   - [vgg.ipynb](#vggipynb)
+   - [ResNet50_Yusuf.ipynb](#resnet50_yusufipynb)
+   - [ResNet50-Copy1.ipynb](#resnet50-copy1ipynb)
+   - [ResNet50.ipynb](#resnet50ipynb)
+   - [ResNet18-pretrained.ipynb](#resnet18-pretrainedipynb)
+   - [resnet.ipynb](#resnetipynb)
+   - [posenet-Copy1.ipynb](#posenet-copy1ipynb)
+   - [posenet.ipynb](#posenetipynb)
+   - [custom.ipynb](#customipynb)
+   - [Requirements](#requirements-1)
+   - [Usage](#usage-1)
+
+3. [Scripts for Robotic Vision and Tracking](#scripts-for-robotic-vision-and-tracking)
+   - [track_arucoMarker.py](#track_arucomarkerpy)
+   - [shape_detection.py](#shape_detectionpy)
+   - [mimic_aruco.py](#mimic_arucopy)
+   - [m.py](#mpy)
+   - [countour_arucomarker.py](#countour_arucomarkerpy)
+   - [colour_detection.py](#colour_detectionpy)
+   - [aruco.py](#arucopy)
+   - [Requirements](#requirements-2)
+   - [Usage](#usage-2)
 
 ---
 
 ## Dataset Collection and Preprocessing Scripts
 
 This folder contains scripts for collecting and preprocessing data for training deep learning models. These scripts handle tasks such as data augmentation, image cropping, and duplication to prepare datasets for effective model training.
-
-### Table of Contents
-
-- [rotate.py](#rotatepy)
-- [data_collection.py](#data_collectionpy)
-- [cropping.py](#croppingpy)
-- [copy6.py](#copy6py)
-- [Requirements](#requirements)
-- [Usage](#usage)
 
 ### rotate.py
 
@@ -83,20 +112,6 @@ Ensure the input data and output directories are correctly set within each scrip
 
 This folder contains various custom deep learning models designed to predict the 6 Degrees of Freedom (6DoF) for a robot. These models employ different backbone architectures to facilitate robust and accurate predictions from multimodal data sources.
 
-### Table of Contents
-
-- [vgg.ipynb](#vggipynb)
-- [ResNet50_Yusuf.ipynb](#resnet50_yusufipynb)
-- [ResNet50-Copy1.ipynb](#resnet50-copy1ipynb)
-- [ResNet50.ipynb](#resnet50ipynb)
-- [ResNet18-pretrained.ipynb](#resnet18-pretrainedipynb)
-- [resnet.ipynb](#resnetipynb)
-- [posenet-Copy1.ipynb](#posenet-copy1ipynb)
-- [posenet.ipynb](#posenetipynb)
-- [custom.ipynb](#customipynb)
-- [Requirements](#requirements)
-- [Usage](#usage)
-
 ### vgg.ipynb
 
 This notebook implements a custom VGG-based model to predict the 6DoF for the robot. The model architecture adapts the classic VGG design to work with multimodal inputs and outputs tailored for robotics applications.
@@ -156,23 +171,9 @@ Each notebook can be run independently in a Jupyter environment. Load the notebo
 
 ---
 
-
-
 ## Scripts for Robotic Vision and Tracking
 
 This folder contains various scripts for robotic vision and tracking tasks using OpenCV and ArUco markers. These scripts are designed to facilitate color detection, shape recognition, and ArUco marker tracking and manipulation for robotic applications.
-
-### Table of Contents
-
-- [track_arucoMarker.py](#track_arucomarkerpy)
-- [shape_detection.py](#shape_detectionpy)
-- [mimic_aruco.py](#mimic_arucopy)
-- [m.py](#mpy)
-- [countour_arucomarker.py](#countour_arucomarkerpy)
-- [colour_detection.py](#colour_detectionpy)
-- [aruco.py](#arucopy)
-- [Requirements](#requirements)
-- [Usage](#usage)
 
 ### track_arucoMarker.py
 
@@ -194,7 +195,7 @@ This script tracks ArUco markers and monitors their positions, printing messages
 
 This script captures video from a webcam and detects the largest contour of a specific color (red) using HSV color space. It tracks the detected contour's center and draws its path on a separate tracking frame.
 
-## colour_detection.py
+### colour_detection.py
 
 This script detects colors in a video stream, focusing on red color detection using HSV color space. It draws bounding boxes around detected areas and tracks their movement.
 
@@ -227,4 +228,7 @@ python track_arucoMarker.py
 
 Ensure that your camera is properly configured and connected, as most scripts rely on webcam input for real-time processing.
 
---- 
+
+
+---
+
