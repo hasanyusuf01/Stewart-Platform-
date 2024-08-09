@@ -1,4 +1,3 @@
-Here's a revised version of your README with a consolidated table of contents pointing to the main sections:
 
 ---
 
@@ -39,6 +38,11 @@ This repository contains code for training custom multimodal neural networks des
    - [aruco.py](#arucopy)
    - [Requirements](#requirements-2)
    - [Usage](#usage-2)
+
+4. [Testing and Model Evaluation Scripts](#testing-and-model-evaluation-scripts)
+   - [streamlit_app.py](#streamlit_apppy)
+   - [pipline1.py](#pipline1py)
+   - [Python Version Requirement](#python-version-requirement)
 
 ---
 
@@ -215,7 +219,9 @@ To run these scripts, you need to have the following Python packages installed:
 Install the necessary packages using pip:
 
 ```bash
-pip install opencv-python numpy imutils pandas
+pip install opencv-python numpy imutils
+
+ pandas
 ```
 
 ### Usage
@@ -228,7 +234,23 @@ python track_arucoMarker.py
 
 Ensure that your camera is properly configured and connected, as most scripts rely on webcam input for real-time processing.
 
+---
 
+## Testing and Model Evaluation Scripts
+
+This section covers scripts designed for testing and evaluating the trained models on live or recorded data.
+
+### streamlit_app.py
+
+This script provides a Streamlit web application for live robot movement prediction based on video input. Users can select between live video or video file input, upload a target image, and see the predicted robot movements in real time.
+
+### pipline1.py
+
+This script outlines a pipeline for processing live video or video files, predicting the robot's 6DoF using the trained model, and sending the control commands to the robot. It integrates video capture, model prediction, and robot control in a streamlined process.
+
+### Python Version Requirement
+
+These scripts require Python 3.11.9 to ensure compatibility and optimal performance.
 
 ---
 
