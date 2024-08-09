@@ -1,0 +1,1 @@
+ISOMETRIC_VIEW = [-65, -45]
